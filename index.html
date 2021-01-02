@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<title>ATM Home</title>
+<meta charset="UTF-8" >
+<meta name="description" content="Association of Technology in Medicine Home Page">
+<meta name="keywords" content="UIUC,RSO,ATM,Association,Technology,Medicine,Home">
+<meta name="author" content="Alexander Marcozzi">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="file:///C:/Users/alexm/Desktop/ATM%20Site/" target="_blank">
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Top header -->
+    <header>
+        <!-- Contains the logo and top menu -->
+        <div id="top-header">
+            <!-- Logo -->
+            <div id="logo">
+                <img src="images/logo.png">
+            </div>
+
+            <!-- Navigation menu -->
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="about.html" target="_self">About Us</a></li>
+                        <li><a href="membership.html" target="_self">Membership</a></li>
+                        <li><a href="constby.html" target="_self">Constitution / Bylaws</a></li>
+                        <li><a href="contact.html" target="_self">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+
+        <div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+                <img src="images/quad2.jpg" style="width:100%">
+                <h2 id="image-text-1">A familiar place</h2>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="images/science.jpg" style="width:100%">
+                <h2 id="image-text-2">Incredible<br> discoveries</h2>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="images/technology.jpg" style="width:100%">
+                <h2 id="image-text-3">Cutting-<br>edge<br>technology</h2>
+              </div>
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Section 1: Welcome Message -->
+        <section id="welcome">
+            <h1 class="title">
+                Welcome to the Association
+            </h1>
+
+            <p>
+                Here you will find everything you need to know about the
+                <strong>Association of Technology in Medicine</strong> (ATM),
+                a Registered Student Organization at the University of
+                Illinois at Urbana-Champaign. You can find our university
+                page <a href="https://illinois.campuslabs.com/engage/organization/atm"
+                class="text-link">here</a>.
+            </p>
+        </section>
+
+        <!-- Section 2: Additional Information -->
+        <section id="section-2">
+            <div class="row">
+                <div id="column1">
+                    <div class="column-title">
+                        <h2>What We Do</h2>
+                    </div>
+
+                    <p>
+                        The ATM is a great organization full of great people.
+                        This paragraph needs to be better, but Hamster and Co.
+                        are seeking to make a big difference in a big way.
+                        Also make sure these are about the same length.
+                    </p>
+
+                    <a href="about.html"
+                        target="_self" class="button">
+                        Learn More
+                    </a>
+                </div>
+
+                <div id="column2">
+                    <div class="column-title">
+                        <h2>Membership</h2>
+                    </div>
+
+                    <p>
+                        Members of the ATM get to join Hamster to do big things.
+                        Some of these big things include associating,
+                        technology, medicine, and technology in medicine. If
+                        you are interested in joining, click below.
+                    </p>
+
+                    <a href="membership.html"
+                        target="_self" class="button">
+                        Learn More
+                    </a>
+                </div>
+
+                <div id="column3">
+                    <div class="column-title">
+                        <h2>Constitution / Bylaws</h2>
+                    </div>
+
+                    <p>
+                        All Registered Student Organizations at the University
+                        of Illinois at Urbana-Champaign are required to have
+                        a constitution as well as bylaws with information
+                        concerning the administration of the organization.
+                        Click.
+                    </p>
+
+                    <a href="constby.html"
+                        target="_self" class="button">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id = "footer">
+
+        <!-- Company Details -->
+        <address class="company-details">
+            <div>
+                <span id="icon" class="fa fa-envelope"></span>
+                <span>dantejm2@illinois.edu</span>
+            </div>
+        </address>
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>©  All rights reserved | Association of Technology in Medicine.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>

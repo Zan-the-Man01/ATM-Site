@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+
+/****************************************************/
+/*                 General Styling                  */
+/****************************************************/
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: hsl(230, 17%, 20%);;
+    font-family: 'IBM Plex Sans';
+    font-size: 12pt;
+    color:gold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: gold;
+}
+
+p, ol, ul {
+    margin-top: 0;
+}
+
+p {
+    line-height: 180%;
+}
+
+ol, ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    /* Set width of container to
+        1200px and align center */
+    margin: 0px auto;
+    width: 1200px;
+}
+
+.text-link {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+/****************************************************/
+/*                  Header Styling                  */
+/****************************************************/
+header {
+    overflow: hidden;
+}
+
+#top-header {
+    text-align: center;
+    height: 60px;
+}
+
+/****************************************************/
+/*                  Logo Styling                    */
+/****************************************************/
+#logo {
+    float: left;
+    padding: none;
+    margin: none;
+    height: 45px;
+    width: 30%;
+}
+
+#logo img {
+    height: 100%;
+    /*width: 60%;*/
+    float: left;
+    padding: 10px 0px;
+}
+
+/****************************************************/
+/*             Navigation Menu Styling              */
+/****************************************************/
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+
+#menu ul {
+    text-align: center;
+    float: right;
+    margin: none;
+    background: gold;
+}
+
+#menu li {
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+#menu li a, #menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+    transition: 0.6s ease;
+}
+
+#menu li a {
+    color: black;
+}
+
+#menu li:hover a, #menu li span {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+/****************************************************/
+/*                Slideshow Styling                 */
+/****************************************************/
+#image-text-1 {
+    position: absolute;
+    font-size: 6vw;
+    top: 80%;
+    left: 25%;
+    font-family: 'IBM Plex Sans';
+    color: gold;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+
+
+#image-text-2 {
+    position: absolute;
+    font-size: 6vw;
+    top: 40%;
+    left: 15%;
+    font-family: 'IBM Plex Sans';
+    color: gold;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+
+
+#image-text-3 {
+    position: absolute;
+    font-size: 6vw;
+    top: 23%;
+    left: 75%;
+    font-family: 'IBM Plex Sans';
+    color: gold;
+    transform: translate(-30%, -30%);
+    text-align: center;
+}
+
+
+/* Caps the dynamic font size to 60pt */
+/* @media screen and (min-width: 1000px) {
+    #image-text-1 {
+     font-size: 60px;
+    }
+
+    #image-text-2 {
+       font-size: 60px;
+    }
+
+    #image-text-3 {
+     font-size: 60px;
+    }
+}*/
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  /*max-width: 1000px;*/
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/****************************************************/
+/*              Main Section 1 Styling              */
+/****************************************************/
+
+#welcome {
+    overflow: hidden;
+    width: 60%;
+    margin: 0px auto;
+}
+
+#welcome .title {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#welcome p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#standalone-text {
+    overflow: hidden;
+    width: 80%;
+    margin: 0px auto;
+}
+
+#standalone-text .title {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#standalone-text p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/****************************************************/
+/*              Main Section 2 Styling              */
+/****************************************************/
+
+#section-2{
+    overflow: hidden;
+    /*
+    margin-top: 5em;
+    padding-top: 1em;
+    */
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.row #column1,
+.row #column2,
+.row #column3 {
+        float: left;
+
+        /* IF YOU ADD THE * {BLOCK} THING YOU CAN JUST SET THIS TO 33.3% */
+        width: 28.3%;
+        padding: 4% 2.5% 4% 2.5%;
+}
+
+.column-title h2{
+    margin: 1em 0em;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: gold;
+    color: black;
+    border: 2px solid gold;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.center-button {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    background-color: gold;
+    color: black;
+    border: 2px solid gold;
+    padding: 16px 32px;
+    margin: 0 auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 25%;
+}
+
+.center-button:hover {
+    background-color: white;
+    color: black;
+}
+
+/****************************************************/
+/*                  Footer Styling                  */
+/****************************************************/
+
+.company-details{
+    overflow: hidden;
+    padding: 3em 0em;
+    background: grey;
+    text-align: center;
+    margin-top: 5em;
+}
+
+#footer #icon{
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+.copyright
+{
+    overflow: hidden;
+    padding: 3em 0em;
+    text-align: center;
+    background: black;
+}
+
+.copyright p
+{
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.copyright a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
