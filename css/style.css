@@ -68,15 +68,19 @@ header {
     float: left;
     padding: none;
     margin: none;
-    height: 45px;
-    width: 30%;
+    height: 60px;
 }
 
 #logo img {
     height: 100%;
-    /*width: 60%;*/
+    /*width: 7%;*/
     float: left;
     padding: 10px 0px;
+}
+
+#atm {
+    float: left;
+    padding: 20px 30px;
 }
 
 /****************************************************/
@@ -84,7 +88,7 @@ header {
 /****************************************************/
 #menu{
     float: right;
-    width: 70%;
+    width: 65%;
     height: 100%;
     margin: none;
 }
