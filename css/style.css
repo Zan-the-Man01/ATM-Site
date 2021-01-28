@@ -156,8 +156,8 @@ header {
 #image-text-3 {
     position: absolute;
     font-size: 6vw;
-    top: 23%;
-    left: 75%;
+    top: 42%;
+    left: 68%;
     font-family: 'IBM Plex Sans';
     color: gold;
     transform: translate(-30%, -30%);
@@ -302,6 +302,13 @@ header {
 #standalone-text p {
     margin-bottom: 40px;
     text-align: center;
+}
+
+#standalone-text center {
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 50%;
 }
 
 /****************************************************/
